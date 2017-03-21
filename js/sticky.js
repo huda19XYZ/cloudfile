@@ -25,7 +25,7 @@ parTop= parent.offset().top,
 winScroll= $(this).scrollTop(),
 winHeight= this.innerHeight,
 winWidth= this.innerWidth,
-grow= (winHeight+winScroll)-(parTop+parHeight);console.log(grow);
+grow= (winHeight+winScroll)-(parTop+parHeight);
 wrapper.each(function(index) {
 var heightest= Math.max.apply(null, heights),
 sticky= $(this).children(),
