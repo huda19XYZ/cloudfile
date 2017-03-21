@@ -1,3 +1,7 @@
+/* jQuery sticky.js by muhammad f huda
+Twitter: @f_huda19
+Blog: http://cyber4rt.wapsite.me
+*/
 (function($) {
 $.fn.sticky= function(minWidth= 0) {
 var wrapper= $(this).css({
