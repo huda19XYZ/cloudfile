@@ -19,11 +19,13 @@ var heights= new Array();
 wrapper.children().each(function() {
 heights.push($(this).outerHeight());
 });
-var parHeight= wrapper.parent().outerHeight(),
+var parent= wrapper.parent(),
+parHeight= parent.outerHeight(),
+parTop= parent.offset().top,
 winScroll= $(this).scrollTop(),
 winHeight= this.innerHeight,
 winWidth= this.innerWidth,
-grow= winHeight+winScroll-parHeight;console.log(grow);
+grow= (winHeight+winScroll)-(parTop+parHeight);console.log(grow);
 wrapper.each(function(index) {
 var heightest= Math.max.apply(null, heights),
 sticky= $(this).children(),
