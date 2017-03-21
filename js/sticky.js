@@ -4,6 +4,7 @@ Blog: http://cyber4rt.wapsite.me
 */
 (function($) {
 $.fn.sticky= function(minWidth= 0) {
+if($(this).length<1) return this;
 var wrapper= $(this).css({
 "min-height": "1px",
 "min-width": "1px",
